@@ -17,35 +17,38 @@ NEWSPIDER_MODULE = 'zhihu.spiders'
 EMAIL=['moirai.zhang@gmail.com']
 PASSWORD=['moirai742612']
 
+USER = ['zhang-lan-emma']
+
 HEADER={
     "Host": "www.zhihu.com",
     "Connection": "keep-alive",
     "Cache-Control": "max-age=0",
     "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
     "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36",
-    "Referer": "http://www.zhihu.com/people/raymond-wang",
+    "Referer": "http://www.zhihu.com/people/zhang-lan-emma",
     "Accept-Encoding": "gzip,deflate,sdch",
     "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-TW;q=0.2",
     }
 
-COOKIE={
-	"udid":r"ABAA1KtdmgmPTgosRMVfKY8dd719jXtmbtg=|1457758143",
-	"_za":r"9a88987b-04f3-4206-8e38-c4879a3b5c3a", 
-	"_zap":r"47d808a6-ff6a-4ddc-96c2-b05a806053ae", 
-	"q_c1":r"d87e684d1f6f4163ab438f45a482a14c|1460423049000|1457754748000", 
-	"_xsrf":r"2e10fcbd0bf407368d6165949638f933", 
-	"d_c0":r"ADBAjLNKoQmPTsWoA6NJ-Bea4ye0u_HGzZg=|1461058176", 
-	"l_n_c":r"1", 
-	"__utma":r"51854390.423555536.1461060097.1461114203.1461116115.3",
- 	"__utmb":r"51854390.4.10.1461116115", 
-	"__utmc":r"51854390", 
-	"__utmz":r"51854390.1461060097.1.1.utmcsr=zhihu.com|utmccn=(referral)|utmcmd=referral|utmcct=/question/40291772", 
-	"__utmv":r"51854390.000--|3=entry_date=20160312=1", 
-	"login":r"ZTA2YjIzMTI2MTUyNGJkMzk0NjE3N2VjNGRhNjY4NzI=|1461116946|43e01c137f6612fa617a051d85c274fa68c7ff20", 
-	"l_cap_id":r"OWZiODJlYzE5YTk1NGZiNDhjYTE0YjQ5YWE0NmNjOWE=|1461116946|744c25393ee299bc91900f059bb3b619ed432281", 
-	"cap_id":r"NTRjOGY0ZGIyY2IyNGU2ZDg5YTI4MDAwOWE3OTQ2NWM=|1461116946|018530d2769f4f30e3d04e9a041c21c628cca259", 
-	"z_c0":r"QUFCQWUwZ2JBQUFYQUFBQVlRSlZUUmx0UGxlajBycWdHbkIzVlI2V2dDekdpMW5nanZwaGlBPT0=|1461116953|d3734806b865cc583acdd7438fd6f9e4593132ac", 
-	"unlock_ticket":r"QUFCQWUwZ2JBQUFYQUFBQVlRSlZUU0huRmxjZ3lrNVJ0OGsxb2l0dEdIZWJoa1VSRlo2Nm5nPT0=|1461116953|be386db37d8f4c87d6d4e9d71594991b8b996f4c"
+COOKIE = {
+	'udid': r'"ABAA1KtdmgmPTgosRMVfKY8dd719jXtmbtg=|1457758143"',
+	'_za': r'9a88987b-04f3-4206-8e38-c4879a3b5c3a',
+	'_zap': r'47d808a6-ff6a-4ddc-96c2-b05a806053ae',
+	'_xsrf': r'2e10fcbd0bf407368d6165949638f933', 
+	'd_c0': r'"ADBAjLNKoQmPTsWoA6NJ-Bea4ye0u_HGzZg=|1461058176"', 
+	'l_n_c': r'1', 
+	'q_c1': r'b71d8134388b40ffad0e874d8b9b9b01|1461131693000|1461131693000', 
+	'cap_id': r'"NGVkNGVkOTM5ZDIwNDM5NmEzNmEyOTU1OGYyYzUzM2I=|1461131693|b8bb955c31c8fd2a78fa6500ae31800447684796"', 
+	'l_cap_id': r'"Yjg3YmFkZWQyZmU5NDNjOWE5NmRlZmZjNDM1MGRhYWQ=|1461131693|7a4fb410b85a2cb3a9542232d1fe32c626620ceb"', 
+	'__utmt':r'1',
+ 	'__utma':r'51854390.423555536.1461060097.1461118852.1461131697.5', 
+	'__utmb':r'51854390.2.10.1461131697', 
+	'__utmc':r'51854390', 
+	'__utmz':r'51854390.1461118852.4.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)', 
+	'__utmv':r'51854390.000--|2=registration_date=20130510=1^3=entry_date=20160420=1', 
+	'login':r'"MjY1ZjhiZDNhZTVjNDllOWE4OWEzN2VjYTI3ZTJlZTQ=|1461131719|8a769ca3f1565d472bfe489ddc8df3baccfea9a6"', 
+	'z_c0':r'"QUFCQWUwZ2JBQUFYQUFBQVlRSlZUYUtvUGxlLU5EckdTRmpNbjZneV9tRWdmbHA4a24xY0JRPT0=|1461132195|f677f59ae761b8c22b9e1500e78baafca159fb70"', 
+	'unlock_ticket':r'"QUFCQWUwZ2JBQUFYQUFBQVlRSlZUYXNpRjFjUHJSRVpwdVFtaGxSVzZTSi1FdUhZeFFhWFJ3PT0=|1461132195|009bf1d876244c6bd290fac797d8462b85eccbb1"'
 }
 
 
