@@ -14,10 +14,10 @@ BOT_NAME = 'zhihu'
 SPIDER_MODULES = ['zhihu.spiders']
 NEWSPIDER_MODULE = 'zhihu.spiders'
 
-EMAIL=['moirai.zhang@gmail.com']
-PASSWORD=['moirai742612']
+EMAIL=['@gmail.com']
+PASSWORD=['']
 
-USER = ['zhang-lan-emma']
+USER = 'zhang-lan-emma'
 
 HEADER={
     "Host": "www.zhihu.com",
