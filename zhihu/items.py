@@ -16,7 +16,8 @@ class ZhihuItem(scrapy.Item):
 class ZhihuUserItem(scrapy.Item):
 	_id = scrapy.Field()
 	nickname = scrapy.Field()
-	followees_num = scrapy.Field()
+	followings_num = scrapy.Field()
+	followers_num = scrapy.Field()
 	info = scrapy.Field()
 
 class ZhihuInfoItem(scrapy.Item):

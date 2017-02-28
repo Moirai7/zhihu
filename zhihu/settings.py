@@ -19,39 +19,34 @@ PASSWORD=['']
 
 USER = 'zhang-lan-emma'
 
-HEADER={
-    "Host": "www.zhihu.com",
-    "Connection": "keep-alive",
-    "Cache-Control": "max-age=0",
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-    "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36",
-    "Referer": "http://www.zhihu.com/people/zhang-lan-emma",
-    "Accept-Encoding": "gzip,deflate,sdch",
-    "Accept-Language": "zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4,zh-TW;q=0.2",
-    }
+COOKIES_DEBUG = True
 
-COOKIE = {
-	'udid': r'"ABAA1KtdmgmPTgosRMVfKY8dd719jXtmbtg=|1457758143"',
-	'_za': r'9a88987b-04f3-4206-8e38-c4879a3b5c3a',
-	'_zap': r'47d808a6-ff6a-4ddc-96c2-b05a806053ae',
-	'_xsrf': r'2e10fcbd0bf407368d6165949638f933', 
-	'd_c0': r'"ADBAjLNKoQmPTsWoA6NJ-Bea4ye0u_HGzZg=|1461058176"', 
-	'l_n_c': r'1', 
-	'q_c1': r'b71d8134388b40ffad0e874d8b9b9b01|1461131693000|1461131693000', 
-	'cap_id': r'"NGVkNGVkOTM5ZDIwNDM5NmEzNmEyOTU1OGYyYzUzM2I=|1461131693|b8bb955c31c8fd2a78fa6500ae31800447684796"', 
-	'l_cap_id': r'"Yjg3YmFkZWQyZmU5NDNjOWE5NmRlZmZjNDM1MGRhYWQ=|1461131693|7a4fb410b85a2cb3a9542232d1fe32c626620ceb"', 
-	'__utmt':r'1',
- 	'__utma':r'51854390.423555536.1461060097.1461118852.1461131697.5', 
-	'__utmb':r'51854390.2.10.1461131697', 
-	'__utmc':r'51854390', 
-	'__utmz':r'51854390.1461118852.4.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)', 
-	'__utmv':r'51854390.000--|2=registration_date=20130510=1^3=entry_date=20160420=1', 
-	'login':r'"MjY1ZjhiZDNhZTVjNDllOWE4OWEzN2VjYTI3ZTJlZTQ=|1461131719|8a769ca3f1565d472bfe489ddc8df3baccfea9a6"', 
-	'z_c0':r'"QUFCQWUwZ2JBQUFYQUFBQVlRSlZUYUtvUGxlLU5EckdTRmpNbjZneV9tRWdmbHA4a24xY0JRPT0=|1461132195|f677f59ae761b8c22b9e1500e78baafca159fb70"', 
-	'unlock_ticket':r'"QUFCQWUwZ2JBQUFYQUFBQVlRSlZUYXNpRjFjUHJSRVpwdVFtaGxSVzZTSi1FdUhZeFFhWFJ3PT0=|1461132195|009bf1d876244c6bd290fac797d8462b85eccbb1"'
+HEADER={
+    'Connection':'keep-alive',
+    'Upgrade-Insecure-Requests':1,
+    'User-Agent':'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+    'Host': 'www.zhihu.com',
+    'Connection': 'keep-alive',
+    'Pragma': 'no-cache',
+    'Cache-Control': 'no-cache',
+    'Accept': '*/*',
+    'Origin': 'https://www.zhihu.com',
+    'X-Requested-With': 'XMLHttpRequest',
+    'Content-Type': 'application/x-www-form-urlencoded',
+    'Accept-Encoding': 'gzip, deflate',
+    'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,zh-TW;q=0.4',
 }
 
+COOKIE=False
+''''
+ {'d_c0'="ACBCXUvl5gqPThQCjf3Kxy07MchCyfq33Yc=|1480073838",
+ '_zap'='a3c6fbd3-6af5-4f09-a2e0-15cf4ee8bac9', 
+ 'q_c1'='8d797744af7d4f339fc0df82c8f77dd0|1486051188000|1480073837000', 
+ 'aliyungf_tc'='AQAAACWr8RfeHAgA4tgFZUbctdVOuX85',
+ '_xsrf'='e5a80179e72ecf5b7e25e96926c476b2'; 
+ 'l_cap_id'="YmE0ZTFhOTg1OTUyNDMwNmEzZWZiMDFjYjBlNThiOTI=|1488281281|84a8618fe495ab00c16fd2f26525bf63a54b293d", 'cap_id'="NmY4NzFjNGIzMzEyNDUxNmE0NjY4NGQxNTkxMWNhZDg=|1488281281|5ba34a421dfe7cce0ebcc67d63216ab5671e7a90", 'login'="M2IxMWMxNDM2NDNhNDcyZDkzNDY3NTk4MzE0ZjI3NzM=|1488281835|004d954362b856f8cdb32f392b6a11882818c865", 'nweb_qa'='heifetz', 'z_c0'='Mi4wQUFCQWUwZ2JBQUFBSUVKZFMtWG1DaGNBQUFCaEFsVk42LTNjV0FBMldqcWxPY3lZUFdpc3pncmZncmdGRldSZkRB|1488281837|42acd3e151526a20301ae8d6be04bc71f881ea1e', '__utma'='51854390.1651814320.1488277841.1488277841.1488281830.2', '__utmb'='51854390.0.10.1488281830', '__utmc'='51854390', '__utmz'='51854390.1488277841.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)', '__utmv'='51854390.100--|2=registration_date=20130510=1^3=entry_date=20130510=1'}
 
+'''
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
 #USER_AGENT = 'zhihu (+http://www.yourdomain.com)'
 

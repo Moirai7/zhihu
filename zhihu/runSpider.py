@@ -39,14 +39,13 @@ if __name__ == '__main__':
 
     results = Queue()
     check_name = []
-    check_name.append('zhang-lan-emma')
-    crawler = CrawlerWorker(Followees(),'zhang-lan-emma',results)
+    check_name.append('zhang-jia-wei')
+    crawler = CrawlerWorker(Followees(),'zhang-jia-wei',results)
     crawler.start()
     users =[]
     users.append(results.get())
-   
     iters = 0 
-    while iters < 7:
+    while iters < 1:
 	for user in users:
 		for username_tmp in user["info"]:
 			if username_tmp not in check_name:
@@ -55,5 +54,8 @@ if __name__ == '__main__':
 				crawler = CrawlerWorker(Followees(),username_tmp,results)
 				crawler.start()
 				users.append(results.get())
+			break
+		break
     	iters += 1
-    print json.dumps(users)
+    #print json.dumps(users)
+    print json.dumps(dict(users))
